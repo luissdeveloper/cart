@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cart js">
+    <title>Cart JS</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/skeleton.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div>
+                <div class="columns">
+                    <img src="/assets/img/logo.png" alt="Logo empresa" id="logo">
+                </div>
+                <div class="columns">
+                    <ul>
+                        <li class="submenu">
+                            <div class="icon-cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="6" cy="19" r="2" />
+                                    <circle cx="17" cy="19" r="2" />
+                                    <path d="M17 17h-11v-14h-2" />
+                                    <path d="M6 5l14 1l-1 7h-13" />
+                                  </svg>
+                            </div>
+                            <div id="cart">
+                                <table id="cart-list" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="" id="empty-cart" class="button u-full-width">Eliminar todo</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="content-hero">
+                        <h2 class="content-hero__title">
+                            Encuentra el diseño ideal
+                        </h2>
+                        <p class="content-hero__info">
+                            Todo a $150
+                        </p>
+                        <form action="#" id="search" method="post" class="form">
+                            <input type="text" class="u-full-width" placeholder="Encuentra su diseño deseado" id="form__search">
+                            <input type="submit" id="form__submit" class="form-submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar">
+        <div class="container">
+            <div class="row">
+                <div class="columns ">
+                    <img src="/assets/img/icon1.png" alt="" class="icon icon1">
+                    <p>SEO Optimizado</p></p>
+                </div>
+                <div class="columns">
+                    <img src="/assets/img/icon2.png" alt="" class="icon icon2">
+                    <p>Diseño full adaptable</span></p></p>
+                </div>
+                <div class="columns">
+                    <img src="/assets/img/icon3.png" alt="" class="icon icon3">
+                    <p>Diseños modernos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="design-list" class="container">
+        <h1 class="design-list-title">
+            Nuestros diseños
+        </h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets/img/agency-creative-1.jpg" alt="" class="img-card">
+                    <div class="info-card">
+                        <h4><a href="https://vivecasanare.com" target="_blank">Agency creative</a></h4>
+                        <p>Luissdev</p>
+                        <p class="price">
+                            $150
+                        </p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets/img/shop-1.jpg" alt="" class="img-card">
+                    <div class="info-card">
+                        <h4><a href="https://tiendatatista.com" target="_blank">Shop</a></h4>
+                        <p>Luissdev</p>
+                        <p class="price">
+                            $150
+                        </p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets/img/blog-1.jpg" alt="" class="img-card">
+                    <div class="info-card">
+                        <h4><a href="https://pautonoticias.com" target="_blank">Blog</a></h4>
+                        <p>Luissdev</p>
+                        <p class="price">
+                            $150
+                        </p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets/img/eletronic-store-1.jpg" alt="" class="img-card">
+                    <div class="info-card">
+                        <h4><a href="https://vivecasanare.com" target="_blank">Electronic Store</a></h4>
+                        <p>Luissdev</p>
+                        <p class="price">
+                            $150
+                        </p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets/img/hammocks-1.jpg" alt="" class="img-card">
+                    <div class="info-card">
+                        <h4><a href="https://chinchorroscasanare.com" target="_blank">Hammocks</a></h4>
+                        <p>Luissdev</p>
+                        <p class="price">
+                            $150
+                        </p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="/assets/img/tech-blog-1.jpg" alt="" class="img-card">
+                    <div class="info-card">
+                        <h4><a href="https://ideasllaneras.com" target="_blank">Tech Blog</a></h4>
+                        <p>Luissdev</p>
+                        <p class="price">
+                            $150
+                        </p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="columns" id="footer__info">
+                    <img src="/assets/img/logo-2.png" alt="Logo empresa">
+                    <p></p>
+                </div>
+                <div class="columns">
+                    <nav id="footer__links" class="menu">
+                        <a href="#" class="link">Redes</a>
+                        <a href="#" class="link">Nosotros</a>
+                        <a href="#" class="link">Contacto</a>
+                    </nav>
+                </div>
+                <p class="footer-copy" id="copy">Hecho con pasión por <span>Luis Sanchez</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
