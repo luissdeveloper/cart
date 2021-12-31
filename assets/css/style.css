@@ -162,6 +162,11 @@ form{
 }
 
 @media(min-width: 768px){
+
+    .toolbar p{
+        line-height: 4rem;
+    }
+
     .toolbar > .container > .row{
         display: flex;
         justify-content: center;
@@ -169,6 +174,9 @@ form{
 
     .toolbar > .container > .row > div{
         border-bottom: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -251,14 +259,10 @@ form{
 }
 
 .info-card .price {
-    text-decoration: line-through;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
     margin-top: 2rem;
     color: var(--orange);
-}
-.info-card .price span {
-    font-weight: 700;
-    font-size: 2.2rem;
 }
 
 .img-card{
