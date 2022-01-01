@@ -204,6 +204,25 @@ form{
     transition: 0.3s;
 }
 
+.thumbnail{
+    width: 48px;
+    height: auto;
+}
+
+.empty-design{
+    color: var(--white);
+    background-color: crimson;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.empty-design:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+
+
+
 /*END - TOOLBAR*/
 
 
